@@ -7,7 +7,7 @@ function fetchData(city, zipcode) {
     if(city) {
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`)
         .then(responce => responce.json())
-        .then(data => console.log(data))
+        .then(data => renderData(data))
     } else if(zipcode) {
         fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zipcode},us&appid=${apiKey}&units=imperial`)
         .then(responce => responce.json())
@@ -26,4 +26,9 @@ function handleSearchInput() {
     const searchInput = document.querySelector('#search');
     fetchData(searchInput.value);
     searchInput.value = ''
+}
+
+function renderData(data) {
+    const {name} = data;
+    document.querySelector('#city').textContent = `${name}`;
 }
