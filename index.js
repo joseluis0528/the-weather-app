@@ -18,6 +18,12 @@ function fetchData(city, zipcode) {
 function handleClick() {
     const searchButton = document.querySelector('#search-button');
     searchButton.addEventListener('click', () => {
-        console.log('click')
+        handleSearchInput()
     })
+}
+
+function handleSearchInput() {
+    const searchInput = document.querySelector('#search');
+    fetchData(searchInput.value);
+    searchInput.value = ''
 }
