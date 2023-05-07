@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 handleClick();
 handleKeydown();
+getDate();
 })
 
 function fetchData(city, zipcode) {
@@ -52,4 +53,8 @@ function renderData(data) {
     document.querySelector('#icon').src = `http://openweathermap.org/img/wn/${icon}.png`;
     document.querySelector('#humidity').textContent = 'Humidity: ' + humidity + '%';
     document.querySelector('#wind').textContent = 'Wind: ' + Math.round(speed) + ' mph';
+}
+
+function getDate() {
+    const date = new Date();
 }
