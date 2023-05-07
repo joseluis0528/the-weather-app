@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-handleClick()
+handleClick();
+handleKeydown();
 })
 
 function fetchData(city, zipcode) {
@@ -18,14 +19,23 @@ function fetchData(city, zipcode) {
 function handleClick() {
     const searchButton = document.querySelector('#search-button');
     searchButton.addEventListener('click', () => {
-        handleSearchInput()
+        handleSearchInput();
+    })
+}
+
+function handleKeydown() {
+    const searchInput = document.querySelector('#search');
+    searchInput.addEventListener('keyup', (e) => {
+        if(e.key === 'Enter') {
+            handleSearchInput();
+        }
     })
 }
 
 function handleSearchInput() {
     const searchInput = document.querySelector('#search');
     fetchData(searchInput.value);
-    searchInput.value = ''
+    searchInput.value = '';
 }
 
 function renderData(data) {
