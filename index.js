@@ -46,13 +46,13 @@ function renderData(data) {
     const {speed} = data.wind;
     
     document.querySelector('#city').textContent = name;
-    document.querySelector('#temperature').textContent = Math.round(temp) + '°';
-    document.querySelector('#lowest').textContent = 'H: ' + Math.round(temp_min) + '°';
-    document.querySelector('#highest').textContent = 'L: ' + Math.round(temp_max) + '°';
+    document.querySelector('#temperature').textContent = `${Math.round(temp)}°`;
+    document.querySelector('#lowest').textContent = `L: ${Math.round(temp_min)}°`;
+    document.querySelector('#highest').textContent = `H: ${Math.round(temp_max)}°`;
     document.querySelector('#description').textContent = description;
     document.querySelector('#icon').src = `http://openweathermap.org/img/wn/${icon}.png`;
-    document.querySelector('#humidity').textContent = 'Humidity: ' + humidity + '%';
-    document.querySelector('#wind').textContent = 'Wind: ' + Math.round(speed) + ' mph';
+    document.querySelector('#humidity').textContent = `Humidity: ${humidity}%`;
+    document.querySelector('#wind').textContent = `Wind: ${Math.round(speed)} mph`;
 }
 
 function getDate() {
