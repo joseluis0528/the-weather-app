@@ -8,3 +8,10 @@ body {
     background: linear-gradient(rgb(47,170,163), rgb(48, 62, 143));
     color: white;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
