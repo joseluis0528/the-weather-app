@@ -15,3 +15,17 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
+.date {
+    margin-top: -20px;
+}
+
+.search-bar {
+    color: rgb(0, 0, 0, 0.8);
+    opacity: 60%;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    padding: 0.5em;
+    margin-bottom: 10px;
+}
