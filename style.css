@@ -16,7 +16,7 @@ body {
     flex-direction: column;
 }
 
-.date {
+#date {
     margin-top: -20px;
 }
 
@@ -28,4 +28,12 @@ body {
     outline: none;
     padding: 0.5em;
     margin-bottom: 10px;
+}
+
+#search-button {
+    opacity: 60%;
+    width: 28px;
+    height: 29px;
+    border: 20px;
+    border-radius: 30px;
 }
