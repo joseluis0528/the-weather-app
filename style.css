@@ -37,3 +37,7 @@ body {
     border: 20px;
     border-radius: 30px;
 }
+
+#search {
+    width: 180px;
+}
