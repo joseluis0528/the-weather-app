@@ -41,3 +41,8 @@ body {
 #search {
     width: 180px;
 }
+
+#city {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
