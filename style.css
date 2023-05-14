@@ -46,3 +46,15 @@ body {
     margin-top: 15px;
     margin-bottom: 30px;
 }
+
+#temperature {
+    margin: -10px;
+}
+
+.high-low {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em;
+    width: 30%;
+    margin-top: -20px;
+}
