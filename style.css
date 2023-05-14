@@ -64,5 +64,12 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 20px;
+    margin: 30px;
+}
+
+#description {
+    text-transform: capitalize;
+    margin: 5px;
+    margin-top: -10px;
+    margin-bottom: -25px;
 }
