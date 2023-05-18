@@ -61,5 +61,5 @@ function getDate() {
     const month = date.getMonth();
     const year = date.getFullYear();
 
-    document.querySelector('#date').textContent = `${day}/${month}/${year}`
+    document.querySelector('#date').textContent = `${month}/${day}/${year}`
 }
