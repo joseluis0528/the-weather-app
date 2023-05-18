@@ -14,6 +14,14 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 420px;
+    padding: 1em;
+    border-radius: 5%;
+    margin: 5%;
+    font-family: 'Poppins', sans-serif;
+    font-display: swap;
 }
 
 #date {
@@ -64,7 +72,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 30px;
+    margin: 20px;
 }
 
 #description {
@@ -72,4 +80,8 @@ body {
     margin: 5px;
     margin-top: -10px;
     margin-bottom: -25px;
+}
+
+#icon {
+    margin: 20%;
 }
