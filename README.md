@@ -15,3 +15,7 @@ git clone git@github.com:joseluis0528/the-weather-app.git
 ```bash
 open index.html
 ```
+
+## Usage
+
+Search for current forecast using zip code (US only), or by City.
